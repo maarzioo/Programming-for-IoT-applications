@@ -1,0 +1,12 @@
+{
+    "deviceID": 5,
+    "deviceName": "PAR_meter",
+    "measureType": ["pH"],
+    "availableServices": ["MQTT"],
+    "servicesDetails": [
+        {
+            "serviceType": "MQTT",
+            "topic": ["MySmartThingy/4/light"]
+        }
+    ]
+}
