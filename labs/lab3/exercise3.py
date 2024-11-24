@@ -31,10 +31,6 @@ class BikeSharingCatalog(object):
         Ordina le stazioni in base ai posti disponibili ("slots") e restituisce le prime N stazioni.
         """
         try:
-            # Verifica se il catalogo è disponibile
-            if not hasattr(self, "catalog") or not self.catalog:
-                raise ValueError("Catalog data is not available.")
-
             # Estrai le stazioni dal catalogo
             stations = self.catalog.get("stations", [])
             if not stations:
@@ -55,10 +51,6 @@ class BikeSharingCatalog(object):
         Ordina le stazioni in base al numero di biciclette disponibili ("bikes") e restituisce le prime N stazioni.
         """
         try:
-            # Verifica se il catalogo è disponibile
-            if not hasattr(self, "catalog") or not self.catalog:
-                raise ValueError("Catalog data is not available.")
-
             # Estrai le stazioni dal catalogo
             stations = self.catalog.get("stations", [])
             if not stations:
@@ -79,10 +71,6 @@ class BikeSharingCatalog(object):
         Filtra le stazioni con più di N biciclette elettriche disponibili e più di M slot liberi.
         """
         try:
-            # Verifica se il catalogo è disponibile
-            if not hasattr(self, "catalog") or not self.catalog:
-                raise ValueError("Catalog data is not available.")
-
             # Estrai le stazioni dal catalogo
             stations = self.catalog.get("stations", [])
             if not stations:
@@ -104,10 +92,6 @@ class BikeSharingCatalog(object):
         Conta il numero totale di biciclette disponibili e slot liberi nella città.
         """
         try:
-            # Verifica se il catalogo è disponibile
-            if not hasattr(self, "catalog") or not self.catalog:
-                raise ValueError("Catalog data is not available.")
-
             # Estrai le stazioni dal catalogo
             stations = self.catalog.get("stations", [])
             if not stations:

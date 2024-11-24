@@ -24,7 +24,7 @@ def main():
             print("Invalid input. Please enter numeric values.")
             continue
 
-        # Costruzione dell'URL della richiesta
+        # Costruzione del URL della richiesta
         url = f"http://localhost:8080/{operation}?op1={op1}&op2={op2}"
 
         try:
